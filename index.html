@@ -20,9 +20,19 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Note: These are the widths for the media queries -->
-    <!-- 980 -->
-    <!-- 768 -->
-    <!-- 640 -->
+    <!-- 980  .col-lg -->
+    <!-- 768  .col-md-  -->
+    <!-- 640 .col-sm -->
+
+    <!-- 
+        from  https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css
+        breakpoint-xs:0; 
+        breakpoint-sm:576px;
+        breakpoint-md:768px;
+        breakpoint-lg:992px; 
+        breakpoint-xl:1200px; 
+    -->
+
 
 
     <title>Stephanie Japs | About</title>
@@ -32,22 +42,28 @@
 
     <header>
         <div class="container">
-            <h1 id="header-title">
-                Stephanie Japs
-            </h1>
-            <nav class="float-right">
-                <ul class="nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="portfolio.html">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </nav>
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <h1 id="header-title">
+                        Stephanie Japs
+                    </h1>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <nav class="float-right">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="index.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="portfolio.html">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -55,7 +71,7 @@
 
         <div class="container">
             <div class="row">
-                <div class="col-7">
+                <div class="col-lg-7 col-md-12">
                     <section>
                         <h2 class="content-title">
                             About Me
@@ -84,7 +100,7 @@
                     </section>
 
                 </div>
-                <div class="col">
+                <div class="col-lg-5 col-md-12">
                     <section>
                         <h3 class="content-title">
                             Connect with Me
@@ -106,12 +122,16 @@
 
 
     <footer>
-        <div id="footer-content" class="container">
-            Copyright &copy;
-            <script type="text/javascript">
-                document.write(new Date().getFullYear());
-            </script>
-            Stephanie Japs
+        <div class="row">
+            <div class="col-md-12">
+                <div id="footer-content" class="container">
+                    Copyright &copy;
+                    <script type="text/javascript">
+                        document.write(new Date().getFullYear());
+                    </script>
+                    Stephanie Japs
+                </div>
+            </div>
         </div>
     </footer>
 
